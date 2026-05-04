@@ -63,7 +63,7 @@ else:
             qty = int(match_row['Qty']) 
             rack = str(match_row['Rack'])
             shelf = str(match_row['Shelf'])
-            price = int(match_row['Price'])
+            price = str(match_row['Price'])
             response = f"Yes, we have {qty} {product_name} in stock. You can find them on Rack {rack}, Shelf {shelf} and price is {price}."
             st.success(response)
             
